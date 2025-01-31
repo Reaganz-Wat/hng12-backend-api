@@ -23,7 +23,7 @@ This API was developed as part of the HNG12 Internship Stage 0 task. It provides
 
 ## Live Demo
 
-API Endpoint: `[Your deployed API URL here]`
+API Endpoint: `[https://hng12-backend-api-tawny.vercel.app/]`
 
 ## API Documentation
 
@@ -69,7 +69,7 @@ PORT=3000
 
 4. Run the development server:
 ```bash
-yarn run start:dev
+yarn start:dev
 ```
 
 The API will be available at `http://localhost:3000`
@@ -90,15 +90,16 @@ src/
 ├── app.module.ts           # Root module
 ├── app.controller.ts       # Main controller
 ├── app.service.ts          # Business logic
-└── app.controller.spec.ts  # Controller tests
+├── app.controller.spec.ts  # Controller tests
+└── message.dto.ts          # Data Transfer Object (DTO) file
 ```
 
 ## Deployment
 
-This API is deployed on [Your Deployment Platform]. The deployment process involves:
+This API is deployed on [vercel]. The deployment process involves:
 
 1. Push changes to GitHub
-2. Automatic deployment via [Your CI/CD Process]
+2. Automatic deployment
 3. Environment variables configuration on the deployment platform
 
 ## Related Resources
