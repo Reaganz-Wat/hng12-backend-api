@@ -7,7 +7,7 @@ export class AppService {
     return {
       "email": "reaganwatmon6@gmail.com",
       "current_datetime": new Date().toISOString(),
-      "github_url": "https://github.com/Reaganz-Wat/hng12-backend-api.git"
+      "github_url": "https://github.com/Reaganz-Wat/hng12-backend-api"
     }
   }
 }
