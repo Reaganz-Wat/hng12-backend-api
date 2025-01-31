@@ -1,12 +1,18 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, HttpCode, HttpStatus } from '@nestjs/common';
 import { AppService } from './app.service';
+import { ApiOperation, ApiResponse } from '@nestjs/swagger';
+import { MessageDto } from './message.dto';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  @HttpCode(HttpStatus.OK)
+  @ApiOperation({ summary: 'Retrieve a message with the current datetime' }) // Swagger description
+  @ApiResponse({ status: 200, description: 'Successfully retrieved message', type: MessageDto }) // Response type
+  getMessage(): MessageDto {
+    return this.appService.getMessage();
   }
+
 }
