@@ -23,7 +23,7 @@ This API was developed as part of the HNG12 Internship Stage 0 task. It provides
 
 ## Live Demo
 
-API Endpoint: `[https://hng12-backend-api-tawny.vercel.app/]`
+API Endpoint: [https://hng12-backend-api-tawny.vercel.app/](https://hng12-backend-api-tawny.vercel.app/)
 
 ## API Documentation
 
